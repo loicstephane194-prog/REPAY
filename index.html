@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="REPAY — Un étudiant vous aide à payer vos abonnements Spotify et Crunchyroll en FCFA via Orange Money ou MTN Mobile Money. Simple, rapide, en toute confiance." />
+  <title>REPAY – Spotify & Crunchyroll payés en FCFA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="#accueil" class="brand">RE<span class="brand-accent">PAY</span></a>
+      <div class="nav-links">
+        <a href="#services">Tarifs</a>
+        <a href="#comment-ca-marche">Comment ça marche</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Me contacter</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav" role="menu">
+      <a href="#services" role="menuitem">Tarifs</a>
+      <a href="#comment-ca-marche" role="menuitem">Comment ça marche</a>
+      <a href="#a-propos" role="menuitem">À propos</a>
+      <a href="#contact" role="menuitem">Me contacter</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="accueil" aria-label="Présentation">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        Votre abonnement<br>
+        <span class="hl-spotify">Spotify</span> ou <span class="hl-crunchyroll">Crunchyroll</span><br>
+        payé en <span class="hl-fcfa">FCFA</span>, par moi.
+      </h1>
+      <p class="hero-subtitle">
+        Pas de carte bancaire internationale&nbsp;? Je m'en charge pour vous.
+        Envoyez simplement votre dépôt via <strong>Orange Money</strong> ou <strong>MTN Mobile Money</strong>
+        — votre abonnement est activé sous 24&nbsp;h, sans stress et en toute confiance.
+      </p>
+      <div class="payment-methods" aria-label="Moyens de paiement acceptés">
+        <span class="pay-label">Paiement via&nbsp;:</span>
+        <span class="pay-badge pay-orange">
+          <img src="logo%20images/orange%20money%20logo.png" alt="Orange Money" class="pay-logo" />
+        </span>
+        <span class="pay-sep" aria-hidden="true">·</span>
+        <span class="pay-badge pay-mtn">
+          <img src="logo%20images/mobile%20money%20logo.png" alt="MTN Mobile Money" class="pay-logo" />
+        </span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#services" class="btn btn-primary btn-lg">Voir les tarifs</a>
+        <a href="#comment-ca-marche" class="btn btn-outline btn-lg">Comment ça marche</a>
+      </div>
+      <div class="hero-stats" aria-label="Chiffres clés">
+        <div class="stat">
+          <span class="stat-num">24h</span>
+          <span class="stat-lbl">Activation max</span>
+        </div>
+        <div class="stat-sep" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-lbl">Confidentiel</span>
+        </div>
+        <div class="stat-sep" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-lbl">Frais cachés</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services" aria-label="Nos services">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">Les tarifs</h2>
+        <p class="section-subtitle">Des prix fixes, clairs, sans mauvaise surprise. Ce que vous voyez, c'est ce que vous payez.</p>
+      </header>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== COMMENT ÇA MARCHE ===== -->
+  <section class="section section-alt" id="comment-ca-marche" aria-label="Comment ça marche">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">Comment ça marche&nbsp;?</h2>
+        <p class="section-subtitle">Quatre étapes simples — et votre musique ou vos animes vous attendent.</p>
+      </header>
+      <ol class="steps-grid" aria-label="Étapes du processus">
+
+        <li class="step-card">
+          <span class="step-num" aria-hidden="true">01</span>
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="M9 12h6M9 16h4"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Choisissez votre formule</h3>
+          <p class="step-desc">Repérez la plateforme et l'offre qui vous correspondent parmi les tarifs affichés. Pas de piège, pas de frais supplémentaires.</p>
+        </li>
+
+        <li class="step-card">
+          <span class="step-num" aria-hidden="true">02</span>
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Écrivez-moi</h3>
+          <p class="step-desc">Un simple message sur WhatsApp ou par email suffit. Je vous réponds personnellement — souvent en moins d'une heure.</p>
+        </li>
+
+        <li class="step-card">
+          <span class="step-num" aria-hidden="true">03</span>
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Envoyez le paiement</h3>
+          <p class="step-desc">Déposez le montant via <strong>Orange Money</strong> ou <strong>MTN Mobile Money</strong>. Je vous communique le numéro lors de notre échange.</p>
+        </li>
+
+        <li class="step-card">
+          <span class="step-num" aria-hidden="true">04</span>
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Profitez — sous 24&nbsp;h</h3>
+          <p class="step-desc">Partagez vos identifiants le temps de l'activation, et c'est parti. En général, c'est réglé bien avant les 24 heures.</p>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== AVERTISSEMENT CONFIDENTIALITÉ ===== -->
+  <section class="section" id="confidentialite" aria-label="Confidentialité">
+    <div class="container">
+      <div class="disclaimer-box" role="note">
+        <div class="disclaimer-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="disclaimer-content">
+          <h3 class="disclaimer-title">🔒 Vos identifiants restent entre nous</h3>
+          <p class="disclaimer-text">
+            Je vous demande votre email et votre mot de passe <strong>uniquement le temps d'activer le paiement</strong> — rien de plus.
+            Je ne stocke rien, je ne partage rien, je ne m'en sers pour aucune autre raison.
+            Ma réputation, c'est ma seule vraie valeur. Je n'ai aucun intérêt à trahir votre confiance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact" aria-label="Contact">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">On se parle&nbsp;?</h2>
+        <p class="section-subtitle">Un message suffit. Je vous réponds vite, personnellement — pas un bot, pas une hotline.</p>
+      </header>
+      <div class="contact-btns" id="contactButtons"></div>
+      <p class="contact-note">Disponible 7j/7 · Réponse rapide · Échange humain garanti</p>
+    </div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section class="section" id="a-propos" aria-label="À propos">
+    <div class="container">
+      <div class="about-box">
+        <div class="about-avatar" aria-hidden="true">👨‍🎓</div>
+        <div class="about-content">
+          <h3 class="about-title">Qui suis-je&nbsp;? Juste un étudiant qui veut être utile.</h3>
+          <p class="about-text">
+            Je suis étudiant. Entre les cours, les examens et les fins de mois serrées, j'ai lancé <strong>REPAY</strong>
+            pour une raison simple&nbsp;: trop de gens autour de moi voulaient accéder à Spotify ou Crunchyroll
+            mais ne pouvaient pas payer en ligne. Alors je me suis dit — pourquoi pas moi&nbsp;?
+          </p>
+          <p class="about-text">
+            Ce n'est pas une grande entreprise. C'est juste moi, mon téléphone, et l'envie sincère d'être utile
+            tout en générant un petit revenu honnête à côté de mes études.
+            Chaque abonnement activé m'aide à avancer, et chaque message de satisfaction me donne l'énergie de continuer.
+          </p>
+          <p class="about-text">
+            Si le service vous a rendu service et que vous souhaitez m'encourager un peu plus —
+            un <strong>petit pourboire, un don symbolique</strong>, ou même simplement en parler autour de vous —
+            sachez que ça compte vraiment pour moi. Ce projet grandit grâce à des gens comme vous. Merci. 🙏
+          </p>
+          <p class="about-text">
+            Et avec le temps, j'ambitionne de faire bien plus que ça. Proposer de nouveaux services,
+            utiles les uns aux autres, et construire une vraie communauté — des gens qui s'entraident,
+            qui partagent, qui avancent ensemble. REPAY, c'est un début. La suite se construit avec vous.
+          </p>
+          <div class="about-signature">— Loïc, fondateur de REPAY</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand">RE<span class="brand-accent">PAY</span></span>
+          <p>Un service étudiant, une vraie valeur ajoutée.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Liens du pied de page">
+          <a href="#services">Tarifs</a>
+          <a href="#comment-ca-marche">Comment ça marche</a>
+          <a href="#a-propos">À propos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> REPAY. Tous droits réservés.</p>
+        <p class="footer-legal">Les logos Spotify, Crunchyroll, Orange Money et MTN sont la propriété de leurs détenteurs respectifs.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
